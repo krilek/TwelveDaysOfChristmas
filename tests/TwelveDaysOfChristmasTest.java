@@ -79,7 +79,6 @@ public class TwelveDaysOfChristmasTest {
         assertEquals(verses[10], TwelveDaysOfChristmas.getVerse(11));
     }
 
-    @Ignore
     @Test
     public void get_twelfth_verse(){
         assertEquals(verses[11], TwelveDaysOfChristmas.getVerse(12));
@@ -95,4 +94,8 @@ public class TwelveDaysOfChristmasTest {
         assertEquals("", TwelveDaysOfChristmas.getVerse(13));
     }
 
+    @Test
+    public void get_all_verses(){
+        assertEquals(String.join("\n\n", verses), TwelveDaysOfChristmas.allVerses());
+    }
 }

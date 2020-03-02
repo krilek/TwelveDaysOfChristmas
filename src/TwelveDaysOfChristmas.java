@@ -1,7 +1,7 @@
 public class TwelveDaysOfChristmas {
     private static String[] days = {
             "first", "second", "third", "fourth", "fifth", "sixth", "seventh",
-            "eighth", "ninth", "tenth", "eleventh", "Twelfth"
+            "eighth", "ninth", "tenth", "eleventh", "twelfth"
     };
     private static String[] gifts = {
             "and a Partridge in a Pear Tree.", "two Turtle Doves",
@@ -24,5 +24,13 @@ public class TwelveDaysOfChristmas {
             verse.append(gifts[i == 0 && j < 2 ? j + 12 : j] + (j == 0 || j==12 ? "" : ",") );
         }
         return verse.toString();
+    }
+
+    public static String allVerses() {
+        String[] lines = new String[12];
+        for (int i=1;i<=12;i++){
+            lines[i-1] = getVerse(i);
+        }
+        return String.join("\n\n", lines);
     }
 }
