@@ -34,7 +34,6 @@ public class TwelveDaysOfChristmasTest {
         assertEquals(verses[1], TwelveDaysOfChristmas.getVerse(2));
     }
 
-    @Ignore
     @Test
     public void get_third_verse(){
         assertEquals(verses[2], TwelveDaysOfChristmas.getVerse(3));
