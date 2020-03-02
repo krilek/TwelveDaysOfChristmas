@@ -6,7 +6,7 @@ public class TwelveDaysOfChristmas {
     private static String[] gifts = {
             "and a Partridge in a Pear Tree.", "two Turtle Doves",
             "three French Hens", "four Calling Birds",
-            "five Golden rings", "six Geese-a-Laying",
+            "five Gold Rings", "six Geese-a-Laying",
             "seven Swans-a-Swimming", "eight Maids-a-Milking",
             "nine Ladies Dancing", "ten Lords-a-Leaping",
             "eleven Pipers Piping", "twelve Drummers Drumming",
@@ -22,7 +22,6 @@ public class TwelveDaysOfChristmas {
         for (int j = i; j >= 0; j--){
             verse.append(" ");
             verse.append(gifts[i == 0 && j < 2 ? j + 12 : j] + (j == 0 || j==12 ? "" : ",") );
-
         }
         return verse.toString();
     }
