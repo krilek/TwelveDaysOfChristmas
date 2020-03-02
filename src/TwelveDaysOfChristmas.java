@@ -39,6 +39,12 @@ public class TwelveDaysOfChristmas {
         if(verseNr - verseNrLast > 0){
             throw new IllegalArgumentException("Range should be positive.");
         }
-        return null;
+        String[] lines = new String[Math.abs(verseNr - verseNrLast)+1];
+        int line = 0;
+        for (int i = verseNr; i <= verseNrLast;i++){
+            lines[line] = getVerse(i);
+            line++;
+        }
+        return String.join("\n\n", lines);
     }
 }

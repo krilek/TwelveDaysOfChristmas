@@ -112,4 +112,11 @@ public class TwelveDaysOfChristmasTest {
         assertEquals(String.join("\n\n", subVerses), TwelveDaysOfChristmas.getRangedVerses(1, 2));
     }
 
+    @Test
+    public void get_single_verse_using_ranged_verses(){
+        String[] subVerses = new String[1];
+        subVerses[0] = verses[0];
+        assertEquals(String.join("\n\n", subVerses), TwelveDaysOfChristmas.getRangedVerses(1, 1));
+    }
+
 }
