@@ -36,6 +36,9 @@ public class TwelveDaysOfChristmas {
     }
 
     public static String getRangedVerses(int verseNr, int verseNrLast) {
+        if(verseNr - verseNrLast > 0){
+            throw new IllegalArgumentException("Range should be positive.");
+        }
         return null;
     }
 }
