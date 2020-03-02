@@ -98,4 +98,10 @@ public class TwelveDaysOfChristmasTest {
     public void get_all_verses(){
         assertEquals(String.join("\n\n", verses), TwelveDaysOfChristmas.allVerses());
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void get_ranged_verses_wrong_range(){
+        assertEquals(String.join("\n\n", verses), TwelveDaysOfChristmas.getRangedVerses(2, 1));
+    }
+
 }

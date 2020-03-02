@@ -26,11 +26,16 @@ public class TwelveDaysOfChristmas {
         return verse.toString();
     }
 
+
     public static String allVerses() {
         String[] lines = new String[12];
         for (int i=1;i<=12;i++){
             lines[i-1] = getVerse(i);
         }
         return String.join("\n\n", lines);
+    }
+
+    public static String getRangedVerses(int verseNr, int verseNrLast) {
+        return null;
     }
 }
