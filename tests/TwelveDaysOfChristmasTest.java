@@ -1,4 +1,5 @@
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -26,6 +27,71 @@ public class TwelveDaysOfChristmasTest {
     @Test
     public void get_first_verse(){
         assertEquals(verses[0], TwelveDaysOfChristmas.getVerse(1));
+    }
+
+    @Test
+    public void get_second_verse(){
+        assertEquals(verses[1], TwelveDaysOfChristmas.getVerse(2));
+    }
+
+    @Ignore
+    @Test
+    public void get_third_verse(){
+        assertEquals(verses[2], TwelveDaysOfChristmas.getVerse(3));
+    }
+
+    @Ignore
+    @Test
+    public void get_fourth_verse(){
+        assertEquals(verses[3], TwelveDaysOfChristmas.getVerse(4));
+    }
+
+    @Ignore
+    @Test
+    public void get_fifth_verse(){
+        assertEquals(verses[4], TwelveDaysOfChristmas.getVerse(5));
+    }
+
+    @Ignore
+    @Test
+    public void get_sixth_verse(){
+        assertEquals(verses[5], TwelveDaysOfChristmas.getVerse(6));
+    }
+
+    @Ignore
+    @Test
+    public void get_seventh_verse(){
+        assertEquals(verses[6], TwelveDaysOfChristmas.getVerse(7));
+    }
+
+    @Ignore
+    @Test
+    public void get_eighth_verse(){
+        assertEquals(verses[7], TwelveDaysOfChristmas.getVerse(8));
+    }
+
+    @Ignore
+    @Test
+    public void get_ninth_verse(){
+        assertEquals(verses[8], TwelveDaysOfChristmas.getVerse(9));
+    }
+
+    @Ignore
+    @Test
+    public void get_tenth_verse(){
+        assertEquals(verses[9], TwelveDaysOfChristmas.getVerse(10));
+    }
+
+    @Ignore
+    @Test
+    public void get_eleventh_verse(){
+        assertEquals(verses[10], TwelveDaysOfChristmas.getVerse(11));
+    }
+
+    @Ignore
+    @Test
+    public void get_twelfth_verse(){
+        assertEquals(verses[11], TwelveDaysOfChristmas.getVerse(12));
     }
 
     @Test(expected = IllegalArgumentException.class)
